@@ -89,22 +89,22 @@ help                            Show help
 
 Design Decisions
 
-dataclasses are used for domain models
+- dataclasses are used for domain models
 
-State Pattern avoids scattered conditional logic
+- State Pattern avoids scattered conditional logic
 
-Rule Engine is separated from CLI and persistence
+- Rule Engine is separated from CLI and persistence
 
-CLI acts as a thin layer; business logic lives in the Service layer
+- CLI acts as a thin layer; business logic lives in the Service layer
 
-Execution via python -m follows Python best practices
+- Execution via python -m follows Python best practices
 
 🚀 Project Purpose
 
-This project was built as a personal portfolio project to:
+- This project was built as a personal portfolio project to:
 
-Strengthen Python OOP skills
+- Strengthen Python OOP skills
 
-Demonstrate clean architecture and design patterns
+- Demonstrate clean architecture and design patterns
 
-Serve as a showcase project for Backend / Python roles
+- Serve as a showcase project for Backend / Python roles
