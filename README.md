@@ -21,7 +21,7 @@ The application is designed to be executed **from the terminal only**.
 ---
 
 ## 📂 Project Structure
-'''
+```
 smart_scheduler/
   README.md
   src/
@@ -46,7 +46,7 @@ smart_scheduler/
       app/
         __init__.py
         service.py
-'''
+```
 ---
 
 ## ⚠️ Important – How *Not* to Run the Project
@@ -74,6 +74,7 @@ python -m scheduler.cli list
 ```
 
 ### 📌 Available CLI Commands
+```
 add "<title>" <priority>        Add a new task
 list                            List all tasks
 next                            Suggest the next task
@@ -85,7 +86,7 @@ due <id> "YYYY-MM-DD HH:MM"     Set due date
 clear-due <id>                  Remove due date
 stats                           Show task statistics
 help                            Show help
-
+```
 ---
 
 Design Decisions
