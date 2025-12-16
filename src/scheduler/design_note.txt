@@ -1,0 +1,25 @@
+smart_scheduler/
+  README.md
+  pyproject.toml            (אופציונלי)
+  src/
+    scheduler/
+      __init__.py
+      cli.py
+      domain/
+        __init__.py
+        task.py              # Task (dataclass) + enums/types
+        states.py            # State pattern (TaskState + מימושים)
+      scheduling/
+        __init__.py
+        strategies.py        # Strategy pattern (בחירת "מה הבא")
+        scheduler.py         # מפעיל אסטרטגיה + מחזיר next
+      rules/
+        __init__.py
+        rules.py             # כללי אימות/סיווג (Ready/Overdue וכו')
+      persistence/
+        __init__.py
+        repository.py        # TaskRepository (CRUD) + next id
+        storage_json.py      # JsonStorage load/save
+      app/
+        __init__.py
+        service.py           # TaskService (use-cases)
