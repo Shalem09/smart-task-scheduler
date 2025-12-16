@@ -21,6 +21,7 @@ The application is designed to be executed **from the terminal only**.
 ---
 
 ## 📂 Project Structure
+'''
 smart_scheduler/
   README.md
   src/
@@ -29,23 +30,23 @@ smart_scheduler/
       cli.py
       domain/
         __init__.py
-        task.py              # Task (dataclass) + enums/types
-        states.py            # State pattern (TaskState + מימושים)
+        task.py
+        states.py
       scheduling/
         __init__.py
-        strategies.py        # Strategy pattern (בחירת "מה הבא")
-        scheduler.py         # מפעיל אסטרטגיה + מחזיר next
+        strategies.py
+        scheduler.py
       rules/
         __init__.py
-        rules.py             # כללי אימות/סיווג (Ready/Overdue וכו')
+        rules.py
       persistence/
         __init__.py
-        repository.py        # TaskRepository (CRUD) + next id
-        storage_json.py      # JsonStorage load/save
+        repository.py
+        storage_json.py
       app/
         __init__.py
-        service.py           # TaskService (use-cases)
-
+        service.py
+'''
 ---
 
 ## ⚠️ Important – How *Not* to Run the Project
@@ -98,6 +99,7 @@ Design Decisions
 - CLI acts as a thin layer; business logic lives in the Service layer
 
 - Execution via python -m follows Python best practices
+---
 
 🚀 Project Purpose
 
